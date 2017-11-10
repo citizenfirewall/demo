@@ -1,0 +1,384 @@
+/* ------- DO NOT EDIT BELOW --------- */
+@import url(https://fonts.googleapis.com/css?family=Abel);
+.chart {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: relative;
+}
+
+.chart.animate svg .circle-foreground {
+  -webkit-animation: offset 3s ease-in-out forwards;
+          animation: offset 3s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.chart svg {
+  width: 100%;
+  height: 100%;
+}
+.chart svg .circle-background, .chart svg .circle-foreground {
+  r: 50px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: rgb(176, 181, 181);
+  stroke-width: 10px;
+}
+
+
+.chart figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #626262;
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+
+
+.chart1.animate figcaption:after {
+  -webkit-animation: chart1-label 3s steps(100) forwards;
+          animation: chart1-label 3s steps(100) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.chart1 svg .circle-foreground {
+  stroke: rgba(16, 207, 187, 1);
+  stroke-dasharray: 314.16px 314.16px;
+  stroke-dashoffset: 314.16px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@-webkit-keyframes chart1-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+@keyframes chart1-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+
+
+
+
+
+.chart2.animate figcaption:after {
+  -webkit-animation: chart2-label 3s steps(20) forwards;
+          animation: chart2-label 3s steps(20) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+.chart2 svg .circle-foreground {
+  stroke:#f6aa2e;
+  stroke-dasharray: 62.832px 314.16px;
+  stroke-dashoffset: 62.832px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+
+
+@-webkit-keyframes 
+chart2-label {
+  100% {
+    -webkit-transform: translateY(-50rem);
+            transform: translateY(-50rem);
+  }
+}
+
+@keyframes chart2-label {
+  100% {
+    -webkit-transform: translateY(-50rem);
+            transform: translateY(-50rem);
+  }
+}
+
+
+.chart3.animate figcaption:after {
+  -webkit-animation: chart3-label 3s steps(32) forwards;
+          animation: chart3-label 3s steps(32) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+.chart3 svg .circle-foreground {
+  stroke:#ce4e3d;
+  stroke-dasharray: 100.531px 314.16px;
+  stroke-dashoffset: 100.531px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+
+
+@-webkit-keyframes 
+chart3-label {
+  100% {
+    -webkit-transform: translateY(-80rem);
+            transform: translateY(-80rem);
+  }
+}
+
+@keyframes chart3-label {
+  100% {
+    -webkit-transform: translateY(-80rem);
+            transform: translateY(-80rem);
+  }
+}
+
+
+
+.chart4.animate figcaption:after {
+  -webkit-animation: chart4-label 3s steps(10) forwards;
+          animation: chart4-label 3s steps(10) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+.chart4 svg .circle-foreground {
+  stroke:#ce4e3d;
+  stroke-dasharray: 31.416px 314.16px;
+  stroke-dashoffset: 31.416px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+
+
+@-webkit-keyframes 
+chart4-label {
+  100% {
+    -webkit-transform: translateY(-25rem);
+            transform: translateY(-25rem);
+  }
+}
+
+@keyframes chart4-label {
+  100% {
+    -webkit-transform: translateY(-25rem);
+            transform: translateY(-25rem);
+  }
+}
+
+
+.chart5.animate figcaption:after {
+  -webkit-animation: chart5-label 3s steps(25) forwards;
+          animation: chart5-label 3s steps(25) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.chart5 svg .circle-foreground {
+  stroke: rgba(16, 207, 187, 1);
+  stroke-dasharray: 78.54px 314.16px;
+  stroke-dashoffset: 78.54px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@-webkit-keyframes chart5-label {
+  100% {
+    -webkit-transform: translateY(-62.5rem);
+            transform: translateY(-62.5rem);
+  }
+}
+
+@keyframes chart5-label {
+  100% {
+    -webkit-transform: translateY(-62.5rem);
+            transform: translateY(-62.5rem);
+  }
+}
+
+
+.chart6.animate figcaption:after {
+  -webkit-animation: chart6-label 3s steps(80) forwards;
+          animation: chart6-label 3s steps(80) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.chart6 svg .circle-foreground {
+  stroke: rgba(16, 207, 187, 1);
+  stroke-dasharray: 251.328px 314.16px;
+  stroke-dashoffset: 251.328px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@-webkit-keyframes chart6-label {
+  100% {
+    -webkit-transform: translateY(-200rem);
+            transform: translateY(-200rem);
+  }
+}
+
+@keyframes chart6-label {
+  100% {
+    -webkit-transform: translateY(-200rem);
+            transform: translateY(-200rem);
+  }
+}
+
+
+.chart7.animate figcaption:after {
+  -webkit-animation: chart7-label 3s steps(100) forwards;
+          animation: chart7-label 3s steps(100) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.chart7 svg .circle-foreground {
+  stroke: rgba(16, 207, 187, 1);
+  stroke-dasharray: 314.16px 314.16px;
+  stroke-dashoffset: 314.16px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@-webkit-keyframes chart7-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+@keyframes chart7-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+
+
+.chart8.animate figcaption:after {
+  -webkit-animation: chart8-label 3s steps(100) forwards;
+          animation: chart8-label 3s steps(100) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.chart8 svg .circle-foreground {
+  stroke: rgba(16, 207, 187, 1);
+  stroke-dasharray: 314.16px 314.16px;
+  stroke-dashoffset: 314.16px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@-webkit-keyframes chart8-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+@keyframes chart8-label {
+  100% {
+    -webkit-transform: translateY(-250rem);
+            transform: translateY(-250rem);
+  }
+}
+
+
+
+
+@-webkit-keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+figure {
+  margin: 1rem !important;
+}
+
+figcaption {
+  font-family: 'Abel', sans-serif;
+}
+.chart_data{
+      float: left;
+      clear: none;
+      width: 50%;
+    }
+
+@media (min-width: 576px) { 
+.chart_data{
+      float: left;
+      clear: none;
+      width: 50%;
+    }
+
+}
+
+
+@media (min-width: 768px) { 
+  .chart_data{
+      float: left;
+      clear: none;
+      width: 25%;
+    }
+     }
+
+
+@media (min-width: 992px) { 
+.chart_data{
+      float: left;
+      clear: none;
+      width: 25%;
+    }
+     }
+
+@media (min-width: 1200px) { 
+ .chart_data{
+      float: left;
+      clear: none;
+      width: 25%;
+    }
+     }

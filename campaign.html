@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>HumanFirewall - Admin Dashboard UI Kit - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="assets/css/styles1.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+    <script src="assets/js/responsiveCarousel.min.js" type="text/javascript"></script>
+    <!--[if lte IE 9]>
+	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+  </head>
+  <body class="fixed-header dashboard">
+    <!-- BEGIN SIDEBPANEL-->
+   <nav class="page-sidebar" data-pages="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/img/logo-white.svg" alt="logo" class="brand" data-src="assets/img/logo-white.svg" data-src-retina="assets/img/logo-white.svg">
+        </div>
+        <div class="sidebar-menu">
+          <ul class="menu-items">
+            <li class="m-t-30 active">
+              <a href="dashboard.html" class="detailed">
+                <span class="title">Dashboard</span>
+              </a>
+              <span class="icon-thumbnail bg-complete text-white"><i class="pg-home"></i></span>         
+            </li>
+            <li class="">
+              <a class="detailed">
+                <span>Campaigns</span> 
+                <span class="arrow"></span>
+              </a> 
+              <span class="icon-thumbnail text-white">
+                <i class="fa fa-newspaper-o"></i>
+              </span> 
+              <ul class="sub-menu">
+                <li class="m-t-10">
+                  <a href="create_campaign.html" class="detailed">
+                    <span>Add Campaign</span>
+                  </a>
+                  <span class="icon-thumbnail">C </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="campaigns_manage.html" class="detailed">
+                    <span>View Campaigns</span>
+                  </a> 
+                  <span class="icon-thumbnail">C </span>
+                </li> 
+                <li class="m-t-10">
+                  <a href="bulk_campaign.html" class="detailed">
+                    <span>Campaigns Schedules</span>
+                  </a> 
+                  <span class="icon-thumbnail text-white">B</span>
+                </li>
+              </ul>
+            </li>
+            <li class="m-t-10">
+              <a class="detailed">
+                <span>Announcement</span> 
+                <span class="arrow"></span>
+              </a> 
+              <span class="icon-thumbnail text-white">
+                <i class="fa fa-bullhorn"></i>
+              </span> 
+              <ul class="sub-menu">
+                <li class="m-t-10">
+                  <a href="Create_announcement.html" class="detailed">
+                    <span>Add Announcement</span>
+                  </a>
+                  <span class="icon-thumbnail">
+                    <i class="fa fa-plus"></i> 
+                  </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="announcement.html" class="detailed">
+                    <span>View Announcement</span>
+                  </a> 
+                  <span class="icon-thumbnail">
+                    <i class="fa fa-eye"></i> 
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="detailed">
+                <span>Recipient</span> 
+                <span class="arrow"></span>
+              </a> 
+              <span class="icon-thumbnail text-white">
+                <i class="fa fa-users"></i>
+              </span> 
+              <ul class="sub-menu">
+                <li class="m-t-10">
+                  <a href="recipient-list.html" class="detailed">
+                    <span>View Recipient</span>
+                  </a>
+                  <span class="icon-thumbnail">R </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="recipient.html" class="detailed">
+                    <span>Add New Recipient</span>
+                  </a> 
+                  <span class="icon-thumbnail">I </span>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="campaign_reporting.html">
+                <span class="title">Reports</span>
+              </a>
+              <span class="icon-thumbnail text-white"><i class="pg-charts"></i></span>         
+            </li>
+            <li class="">
+              <a class="detailed">
+                <span>Company Settings</span> 
+                <span class="arrow"></span>
+              </a> 
+              <span class="icon-thumbnail text-white">
+                <i class="fa fa-bullhorn"></i>
+              </span> 
+              <ul class="sub-menu">
+                <li class="m-t-10">
+                  <a href="domain_list.html" class="detailed">
+                    <span>Domain</span>
+                  </a>
+                  <span class="icon-thumbnail">D</span>
+                </li>
+                <li class="m-t-10">
+                  <a href="company_settings.html" class="detailed">
+                    <span>General</span>
+                  </a> 
+                  <span class="icon-thumbnail">G </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="company_settings.html" class="detailed">
+                    <span>User Management</span>
+                  </a> 
+                  <span class="icon-thumbnail"><i class="fa fa-users"></i> </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="company_settings.html" class="detailed">
+                    <span>Reset Frequency</span>
+                  </a> 
+                  <span class="icon-thumbnail">R </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="company_settings.html" class="detailed">
+                    <span>Email Setting</span>
+                  </a> 
+                  <span class="icon-thumbnail"><i class="fa fa-envelope"> </i></span>
+                </li>
+                <li class="m-t-10">
+                  <a href="automatic_setting.html" class="detailed">
+                    <span>Automatic Setting</span>
+                  </a> 
+                  <span class="icon-thumbnail"><i class="fa fa-cog"></i> </span>
+                </li>
+                <li class="m-t-10">
+                  <a href="notification_setting.html" class="detailed">
+                    <span>Notification Setting</span>
+                  </a> 
+                  <span class="icon-thumbnail"><i class="fa fa-bell"> </i></span>
+                </li>
+                <li class="m-t-10">
+                  <a href="points_setting.html" class="detailed">
+                    <span>Points Setting</span>
+                  </a> 
+                  <span class="icon-thumbnail">P </span>
+                </li>
+              </ul>
+            </li>          
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!-- END SIDEBAR MENU -->
+      </nav>
+    <!-- END SIDEBAR -->
+    <!-- END SIDEBPANEL-->
+    <!-- START PAGE-CONTAINER -->
+    <div class="page-container ">
+      <!-- START HEADER -->
+      <div class="header ">
+        <!-- START MOBILE CONTROLS -->
+        <div class="container-fluid relative">
+          <!-- LEFT SIDE -->
+          <div class="pull-left full-height visible-sm visible-xs">
+            <!-- START ACTION BAR -->
+            <div class="header-inner">
+              <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
+                <span class="icon-set menu-hambuger"></span>
+              </a>
+            </div>
+            <!-- END ACTION BAR -->
+          </div>
+          <div class="pull-center hidden-md hidden-lg">
+            <div class="header-inner">
+              <div class="brand inline">
+                <img src="assets/img/logo.svg" alt="logo" data-src="assets/img/logo.svg" data-src-retina="assets/img/logo.svg">
+              </div>
+            </div>
+          </div>
+          <!-- RIGHT SIDE -->
+          <div class="pull-right full-height visible-sm visible-xs">
+            <!-- START ACTION BAR -->
+            <div class="header-inner">
+              <a href="#" class="btn-link visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
+                <span class="icon-set menu-hambuger-plus"></span>
+              </a>
+            </div>
+            <!-- END ACTION BAR -->
+          </div>
+        </div>
+        <!-- END MOBILE CONTROLS -->
+        <div class=" pull-left sm-table hidden-xs hidden-sm">
+          <div class="header-inner">
+            <div class="brand inline">
+              <img src="assets/img/logo.svg" alt="logo" data-src="assets/img/logo.svg" width="180">
+            </div>
+            <!-- START NOTIFICATION LIST -->
+            
+            <!-- END NOTIFICATIONS LIST -->
+           </div>
+        </div>
+        
+        <div class=" pull-right">
+          <!-- START User Info-->
+          <div class="visible-lg visible-md m-t-10">
+            <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+              <span class="semi-bold">John</span> <span class="text-master">White</span>
+            </div>
+            <div class="dropdown pull-right">
+              <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="thumbnail-wrapper d32 circular inline m-t-5">
+                <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+            </span>
+              </button>
+              <ul class="dropdown-menu profile-dropdown" role="menu">
+               
+                <li class="bg-master-lighter">
+                  <a href="login.html" class="clearfix">
+                    <span class="pull-left">Logout</span>
+                    <span class="pull-right"><i class="pg-power"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END User Info-->
+        </div>
+      </div>
+      <!-- END HEADER -->
+      <!-- START PAGE CONTENT WRAPPER -->
+      <div class="page-content-wrapper ">
+        <!-- START PAGE CONTENT -->
+        <div class="content sm-gutter">
+
+
+          <!-- START CONTAINER FLUID -->
+          <div class="container-fluid padding-25 p-t-100 sm-padding-10">
+            <!-- START ROW -->
+            
+
+<div class="inner" style="transform: translateY(0px); opacity: 1;">
+ 
+<ul class="breadcrumb">
+<li>
+Home
+</li>
+<li><a href="#" class="active">CAMPAIGNS</a>
+</li>
+</ul>
+</div>
+            <!-- END ROW -->
+
+            <div class="row">
+              <div class="col-md-12">
+               
+                 <h5 class="font-montserrat text-complete">Manage Campaigns <i class="fa fa-chevron-right"></i>
+                 </h5>
+                 <p class="hint-text m-t-10 small">See how the campaign you are creating are performing</p>
+                    
+                 
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="widget-10 panel no-border bg-white no-margin widget-loader-bar">
+                      <div class="panel-heading top-left top-right ">
+                      
+                        <div class="panel-title text-black hint-text">
+                        
+                          <span class="font-montserrat text-complete fs-11 all-caps">Live Campaign 
+                                        </span>
+                        </div>
+                        <div class="panel-controls">
+                          <ul>
+                            <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel-body p-t-40">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5 class="no-margin p-b-5 text-black semi-bold">Facebook Password Reset <i class="fa fa-chevron-right"></i></h5>
+                            <div class="pull-left small">
+                              <span class="all-caps font-montserrat hint-text">SENT</span>
+                              <span class=" text-success font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 9%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">OPEN</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">CLICK</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="pull-right m-l-20 m-t-20 small">
+                        <a href="campaign-live.html">
+                              <button class="btn btn-complete btn-cons all-caps">Observe Live</button>
+                              </a>
+                            </div>
+                            </div>
+                      </div>
+                    </div>                  </div>
+                <div class="col-md-4">
+                    <div class="widget-10 panel no-border bg-white no-margin widget-loader-bar">
+                      <div class="panel-heading top-left top-right ">
+                      
+                        <div class="panel-title text-black hint-text">
+                        
+                          <span class="font-montserrat text-complete fs-11 all-caps">Live Campaign 
+                                        </span>
+                        </div>
+                        <div class="panel-controls">
+                          <ul>
+                            <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel-body p-t-40">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5 class="no-margin p-b-5 text-black semi-bold">Twitter- Celebrity follower<i class="fa fa-chevron-right"></i></h5>
+                            <div class="pull-left small">
+                              <span class="all-caps font-montserrat hint-text">SENT</span>
+                              <span class=" text-success font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 9%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">OPEN</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">CLICK</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="pull-right m-l-20 m-t-20 small">
+                        <a href="campaign-live.html">
+                              <button class="btn btn-complete btn-cons all-caps">Observe Live</button>
+                              </a>
+                            </div>
+                            </div>
+                      </div>
+                    </div>                  </div>
+                  <div class="col-md-4">
+                    <div class="widget-10 panel no-border bg-white no-margin widget-loader-bar">
+                      <div class="panel-heading top-left top-right ">
+                      
+                        <div class="panel-title text-black hint-text">
+                        
+                          <span class="font-montserrat hint-text fs-11 all-caps">Recent Campaign 
+                                        </span>
+                        </div>
+                        <div class="panel-controls">
+                          <ul>
+                            <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel-body p-t-40">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5 class="no-margin p-b-5 text-Default semi-bold">Google- Inbox migration<i class="fa fa-chevron-right"></i></h5>
+                            <div class="pull-left small">
+                              <span class="all-caps font-montserrat hint-text">SENT</span>
+                              <span class=" text-success font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 9%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">OPEN</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="pull-left m-l-20 small">
+                              <span class="all-caps font-montserrat hint-text">CLICK</span>
+                              <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="pull-right m-l-20 m-t-20 small">
+                        <a href="campaign_reporting.html">
+                              <button class="btn btn-complete btn-cons all-caps">See Report</button>
+                        </a>
+                            </div>
+                            </div>
+                      </div>
+                    </div>
+                     </div>
+                </div>
+              </div>
+            </div> 
+
+
+            
+
+        <div class="row">
+              <div class="col-md-12">
+               <h5 class="font-montserrat text-complete">Quick Actions <i class="fa fa-chevron-right"></i>
+</h5>
+                 
+                    <div class="row">
+                      <div class="col-md-3">
+                      <a href="Create_announcement.html">
+                        <button class="btn btn-default btn-cons m-b-10 btn-block btn-lg padding-20" type="button"><i class="pg-form"></i> <span class="bold all-caps">Create a new Announcement</span>
+</button></a>
+                      </div>
+                      <div class="col-md-3">
+                      <a href="create_campaign.html">
+                        <button class="btn btn-default btn-cons m-b-10 btn-block btn-lg padding-20" type="button"><i class="pg-form"></i> <span class="bold all-caps">Start a new campaign</span>
+</button></a>
+                      </div>
+                      <div class="col-md-3">
+                        
+                          
+                           
+                          <a href="education_explore.html">
+                            <button class="btn btn-default btn-cons m-b-10 btn-block btn-lg padding-20" type="button"><i class="pg-form"></i> <span class="bold all-caps">Explore Learning Modules</span>
+</button></a>
+                          
+                        
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-default btn-cons m-b-10 btn-block btn-lg padding-20" type="button"><i class="pg-form"></i> <span class="bold all-caps">See Highly Visible Targets</span>
+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+               
+            
+            <div class="row m-t-20">
+            
+            </div>    
+              <div class="row m-t-20">
+              <div class="col-md-12">
+               
+                 <h5 class="font-montserrat text-complete">New Scenarios <i class="fa fa-chevron-right"></i>
+                 </h5>
+                 <p class="hint-text m-t-10 small">Read about Latest Threats to Digital Security</p>
+                    
+                 
+                <div id="w">
+              <nav class="slidernav">
+                  <div id="navbtns" class="clearfix">
+                    <a href="#" class="previous pull-left"><i class="fa fa-chevron-left"></i></a>
+                    <a href="#" class="next pull-right"><i class="fa fa-chevron-right"></i></a>
+                  </div>
+                 </nav>
+
+      <div class="crsl-items" data-navigation="navbtns">
+      <div class="crsl-wrap">
+       
+        <div class="crsl-item">
+         
+                    <div class="panel panel-default">
+                    
+                    
+                    
+                      <div class="panel-heading">
+                        <div class="panel-title"><img src="assets/img/Scenarios/adobe.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                      <p class="bold">Last updated 3 Days ago</p>
+                        <h5 class="semi-bold">Adobe Update</h5>
+                        <p class="scenario-description">Adobe plugin update phishing simulation wherein users asked to update PDF plugin. 
+</p>
+<div class="pull-right m-l-20 small">
+                              <a href="create_campaign.html"><button class="btn btn-complete btn-cons all-caps">Use This</button></a>
+                            </div>
+                      </div>
+                   
+                  </div>
+        </div><!-- post #1 -->
+        
+        <div class="crsl-item">
+          
+                    <div class="panel panel-default">
+                    
+                    
+                    
+                      <div class="panel-heading">
+                        <div class="panel-title"><img src="assets/img/scenarios/dropbox.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                      <p class="bold">Last updated 13 Days ago</p>
+                        <h5 class="semi-bold">Dropbox Share </h5>
+                        <p class="scenario-description">Dropbox share file where most of the users didn’t check details & accept files.</p>
+<div class="pull-right m-l-20 small">
+                              <a href="create_campaign.html"><button class="btn btn-complete btn-cons all-caps">Use This</button></a>
+                            </div>
+                      </div>
+                    </div>
+                 
+        </div><!-- post #2 -->
+        
+        <div class="crsl-item">
+         
+                    <div class="panel panel-default">
+                    
+                    
+                    
+                      <div class="panel-heading">
+                        <div class="panel-title"><img src="assets/img/Scenarios/email_quota.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                      <p class="bold">Last updated 2 Days ago</p>
+                        <h5 class="semi-bold">Email- Quota</h5>
+                        <p class="scenario-description">Email quota where the user asks to clear some data so makes space in for new emails. Classic but very effective.</p>
+<div class="pull-right m-l-20 small">
+                              <a href="create_campaign.html"><button class="btn btn-complete btn-cons all-caps">Use This</button></a>
+                            </div>
+                      </div>
+                    </div>
+                  
+        </div><!-- post #3 -->
+        
+        <div class="crsl-item">
+         
+                    <div class="panel panel-default">
+                    
+                    
+                    
+                      <div class="panel-heading">
+                        <div class="panel-title"><img src="assets/img/Scenarios/facebook.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                      <p class="bold">Last Updated 7 Days ago</p>
+                        <h5 class="semi-bold">Facebook</h5>
+                        <p class="scenario-description">Facebook new privacy policy update wherein users ask to log in & accept term lookalike page.</p>
+<div class="pull-right m-l-20 small">
+                              <a href="create_campaign.html"><button class="btn btn-complete btn-cons all-caps">Use This</button></a>
+                            </div>
+                      </div>
+                    </div>
+                  
+        </div><!-- post #4 -->
+        
+        <div class="crsl-item">
+         
+                    <div class="panel panel-default">
+                    
+                    
+                    
+                      <div class="panel-heading">
+                        <div class="panel-title"><img src="assets/img/Scenarios/gmail.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                      <p class="bold">Last updated 4 Days ago</p>
+                        <h5 class="semi-bold">Gmail</h5>
+                        <p class="scenario-description">Gmail new version update wherein users often click due to curiosity.</p>
+                     <div class="pull-right m-l-20 small">
+                              <a href="create_campaign.html"><button class="btn btn-complete btn-cons all-caps">Use This</button></a>
+                            </div>
+                    </div>
+                  </div>
+        </div><!-- post #5 -->
+      </div><!-- @end .crsl-wrap -->
+    </div>
+    </div>
+              </div>
+            </div>   
+                
+                
+                
+              </div>
+           
+
+
+        
+            
+          </div>
+          <!-- END CONTAINER FLUID -->
+          
+          
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- START COPYRIGHT -->
+        <!-- START CONTAINER FLUID -->
+        <!-- START CONTAINER FLUID -->
+        <div class="map_footer" >
+                
+                 <div class="container-fluid container-fixed-lg footer">
+                  <div class="row m-t-20">
+              <div class="col-md-12">
+               
+                 <h1 class="all-caps text-black bold"><span class="counter" data-count="26548">0</span></h1>
+                 <p>Number of emails reported<br/>
+                 Daily on HumanFirewall<sup>TM</sup> network</p>
+                 
+                 
+                 </div>
+                 </div>
+          <div class="copyright sm-text-center m-t-100">
+            <p class="small no-margin pull-left sm-pull-reset">
+              <span class="hint-text">Copyright &copy; 2017 </span>
+              <span class="font-montserrat">HumanFirewall<sup>TM</sup></span>.
+              <span class="hint-text">All rights reserved. </span>
+              
+            </p>
+            <p class="small no-margin pull-right sm-pull-reset">
+              <a href="#">www.humanfirewall.io</a> 
+            </p>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+                 </div>
+        <!-- END COPYRIGHT -->
+      </div>
+      <!-- END PAGE CONTENT WRAPPER -->
+      
+   
+    <!-- END PAGE CONTAINER -->
+    <!--START QUICKVIEW -->
+    
+    </div>
+    <!-- END QUICKVIEW-->
+    <!-- START OVERLAY -->
+    <div class="overlay hide" data-pages="search">
+      <!-- BEGIN Overlay Content !-->
+      <div class="overlay-content has-results m-t-20">
+        <!-- BEGIN Overlay Header !-->
+        <div class="container-fluid">
+          <!-- BEGIN Overlay Logo !-->
+          <img class="overlay-brand" src="assets/img/logo.svg" alt="logo" data-src="assets/img/logo.svg" data-src-retina="assets/img/logo.svg" >
+          <!-- END Overlay Logo !-->
+          <!-- BEGIN Overlay Close !-->
+          <a href="#" class="close-icon-light overlay-close text-black fs-16">
+            <i class="pg-close"></i>
+          </a>
+          <!-- END Overlay Close !-->
+        </div>
+        <!-- END Overlay Header !-->
+        
+        <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
+        
+        <!-- END Overlay Search Results !-->
+      </div>
+      <!-- END Overlay Content !-->
+    </div>
+    <!-- END OVERLAY -->
+    <!-- BEGIN VENDOR JS -->
+    
+  
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+   
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+   <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+    <script src="assets/plugins/mapplic/js/hammer.js"></script>
+    <script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+    <script src="assets/plugins/mapplic/js/mapplic.js"></script>
+    <script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+    <script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/dashboard.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+         <script>
+   $('.counter').each(function() {
+ var $this = $(this),
+     countTo = $this.attr('data-count');
+ 
+ $({ countNum: $this.text()}).animate({
+   countNum: countTo
+ },
+
+ {
+
+   duration: 8000,
+   easing:'linear',
+   step: function() {
+     $this.text(Math.floor(this.countNum));
+   },
+   complete: function() {
+     $this.text(this.countNum);
+     //alert('finished');
+   }
+
+ });  
+ 
+ 
+
+});
+</script>
+    <script type="text/javascript">
+$(function(){
+  $('.crsl-items').carousel({
+    visible:4,
+    itemMinWidth: 180,
+    itemEqualHeight: 370,
+    itemMargin: 9,
+  });
+  
+  $("a[href=#]").on('click', function(e) {
+    e.preventDefault();
+  });
+});
+</script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>
